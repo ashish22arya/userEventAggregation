@@ -17,7 +17,7 @@ $ ./aggregate_events -i input.json -o output.json
 
 Part 2: Extend your utility to support real-time aggregation. Each time a new event is added to the input JSON file, the utility should update the corresponding daily summary report without reprocessing all the previous events.
 
-To execute this, Append --update flag to the step 3 abvove:
+To execute this, Append --update flag to the step 3 above:
 $ ./aggregate_events -i input.json -o output.json --update
 
 
