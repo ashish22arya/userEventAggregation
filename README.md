@@ -17,10 +17,11 @@ $ ./aggregate_events -i input.json -o output.json
 
 Part 2: Extend your utility to support real-time aggregation. Each time a new event is added to the input JSON file, the utility should update the corresponding daily summary report without reprocessing all the previous events.
 
+To execute this, Append --update flag to the step 3 abvove:
+$ ./aggregate_events -i input.json -o output.json --update
+
+
 Cases handled:
 Case 1: When ever the command line triggered after adding any 'x' number of new events, it will handle correctly considering all new added elements.
 
 Case 2: When the input.json file gets reset or have events less that number of event it aggregated in previous run, it will discard the previous output aggregation and re-compute from the very first event.
-
-To execute this, Append --update flag to the step 3 abvove:
-$ ./aggregate_events -i input.json -o output.json --update
