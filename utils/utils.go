@@ -9,7 +9,7 @@ import (
 
 const (
 	DATEFORMAT           = "2006-01-02"
-	PROCESSED_COUNT_FILE = "utils/processed.json"
+	PROCESSED_COUNT_FILE = "processed.json"
 )
 
 type Processed struct {
